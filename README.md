@@ -76,13 +76,6 @@ npm start
 ```
 The frontend will run on **http://localhost:80**.
 
-### 3. Update the Frontend API URL
-Ensure that the **API URL** in the frontend is pointing to the correct backend endpoint. Modify the `frontend/src/index.js` file:
-
-```javascript
-const apiUrl = "http://localhost:8080";
-```
-
 ---
 
 ## Troubleshooting Section
@@ -100,7 +93,7 @@ chmod +x build.sh
 ### 2. Docker Compose: "Port Already in Use" Error
 **Cause:** The ports `8080` or `80` are already being used by another process.  
 **Solution:**  
-- Stop and terminate running services are using these ports.  
+- Stop and terminate running services that are using these ports.  
 - Or change the ports in the `docker-compose.yml` file and in the frontend & backend configurations.
 
 ### 3. Frontend: "Failed to Fetch" Error
