@@ -21,8 +21,8 @@ Follow the steps below to get the application up and running:
 
 1. **Clone the repository**  
    ```bash
-   git clone <your-repository-url>
-   cd 
+   git clone https://github.com/RomJacoby/esh.git
+   cd esh
    ```
 
 2. **Run the build script to build Docker images**  
