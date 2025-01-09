@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    const apiUrl = "http://localhost:8080/api/message"
+    const apiUrl = `http://${process.env.BACKEND_SERVER}:8080/api/message`
     
     axios.get(apiUrl)
       .then(response => {
